@@ -28,3 +28,31 @@ function addBook(bookName, bookAuthor, bookid) {
     }
   });
 }
+
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  const variable = {
+    name: theBookName.value,
+    author: theBookAuthor.value,
+    id: Math.random()
+      .toString(36)
+      .replace(/[^a-z]+/g, '')
+      .substr(0, 5),
+  };
+  addBook(undefined, undefined, variable.id);
+  bookList.push(variable);
+  localStorage.setItem('books', JSON.stringify(bookList));
+  localStorage.getItem('books');
+});
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem('books') !== null) {
+    bookList = JSON.parse(localStorage.getItem('books'));
+    bookList.forEach((book) => {
+      let booksNames = book.name;
+      let booksAuthors = book.author;
+      let booksid = book.id;
+      addBook(booksNames, booksAuthors, booksid);
+    });
+  }
+});
