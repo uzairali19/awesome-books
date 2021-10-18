@@ -2,11 +2,7 @@
 
 # Awesome books
 
-> Basic website that allows users to add/remove books from a list.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+> Basic website that allows users to add/remove books from a list. Stores the data in the local storage and the uses that to manipulate the data in the front-end.
 
 ## Built With
 
@@ -16,31 +12,29 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://uzairali19.github.io/awesome-books/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
 ### Setup
 
-### Install
-
-### Usage
-
+Run `git clone https://github.com/uzairali19/awesome-books`
 ### Run tests
 
-### Deployment
+For Linters:
 
+```bash
+# To check for HTML errors
+npx hint .
 
+# To check for CSS errors
+npx stylelint "**/*.{css,scss}"
 
+# To check for Javascript errors
+npx eslint .
+```
 ## Authors
 
 👤 **Hamid Murambiwa**
@@ -49,17 +43,17 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@twitterhandle](https://twitter.com/Hamid87789454)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-murambiwa-8a9a9520a/)
 
-👤 **Author2**
+👤 **Uzair Ali**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/uzairali19)
+- Twitter: [@twitterhandle](https://twitter.com/MahbubA10454419)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/uzair-ali-964187166/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/uzairali19/awesome-books/issues/).
 
 ## Show your support
 

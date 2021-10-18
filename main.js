@@ -10,7 +10,7 @@ function addBook(bookName, bookAuthor, bookid) {
   const removeButton = document.createElement('button');
   removeButton.innerText = 'Remove';
   removeButton.setAttribute('id', bookid);
-  if (bookName != undefined && bookAuthor != undefined) {
+  if (bookName !== undefined && bookAuthor !== undefined) {
     nameInput.append(bookName + ' by ' + bookAuthor + ' ');
   } else {
     nameInput.append(theBookName.value + ' by ' + theBookAuthor.value + ' ');
@@ -49,9 +49,9 @@ window.addEventListener('load', () => {
   if (localStorage.getItem('books') !== null) {
     bookList = JSON.parse(localStorage.getItem('books'));
     bookList.forEach((book) => {
-      let booksNames = book.name;
-      let booksAuthors = book.author;
-      let booksid = book.id;
+      const booksNames = book.name;
+      const booksAuthors = book.author;
+      const booksid = book.id;
       addBook(booksNames, booksAuthors, booksid);
     });
   }

@@ -16,6 +16,8 @@
       "no-shadow": "off",
       "no-param-reassign": "off",
       "eol-last": "off",
+      "prefer-template":"off",
+      "no-plusplus":"off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
       }]
