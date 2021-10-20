@@ -7,6 +7,19 @@ class BookList {
     this.submit = submit;
     this.bookList = bookList;
   }
+
+  book() {
+    this.bookId = Math.random()
+      .toString(36)
+      .replace(/[^a-z]+/g, '')
+      .substr(0, 5);
+    const variable = {
+      name: this.bookName.value,
+      author: this.bookAuthor.value,
+      id: this.bookId
+    };
+    return variable;
+  }
 }
 
 const bookName = document.querySelector('.name');
