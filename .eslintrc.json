@@ -1,5 +1,3 @@
-
-   
 {
     "env": {
       "browser": true,
@@ -18,6 +16,7 @@
       "eol-last": "off",
       "prefer-template":"off",
       "no-plusplus":"off",
+      "comma-dangle":"off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
       }]
