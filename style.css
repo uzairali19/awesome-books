@@ -1,4 +1,48 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+.book-data > button {
+  margin-left: 60px;
+}
+
+.book-data {
+  font-size: 30px;
+  color: #fff !important;
+}
+
+.book-data:hover {
+  color: rgb(61, 61, 61) !important;
+}
+
+.main-title {
+  font-size: 80px;
+}
+
+.sub-title {
+  font-size: 40px;
+}
+
+.background-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s;
+  opacity: 0.7;
+  background: #000;
+  background-size: 100% 100%;
+}
+
+.background-image {
+  position: relative;
+  background-image: url(./background.jpeg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
 }

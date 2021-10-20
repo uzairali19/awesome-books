@@ -4,17 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Awsome Books</title>
   </head>
-  <body>
+  <body class="background-image">
     <main>
-      <h1 id="main">Awesome Books</h1>
-      <ul class="book-list"></ul>
-      <form class="form">
-        <input class="name" type="text" placeholder="Title" />
-        <input class="author" type="text" placeholder="Author" />
-        <input class="add" type="submit" value="Add" />
-      </form>
+      <section class="hero is-medium">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 id="main" class="main-title">All Awesome Books</h1>
+            <!-- <ul class="book-list sub-title"></ul> -->
+            <aside class="menu">
+              <ul class="menu-list book-list"></ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section class="hero is-small">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="sub-title">Add Book</h1>
+            <div class="columns">
+              <div class="column is-half is-offset-one-quarter">
+                <div class="field">
+                  <div class="control is-half">
+                    <input class="input name" type="text" placeholder="Book Title" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-half is-offset-one-quarter">
+                <div class="field">
+                  <div class="control is-half">
+                    <input class="input author" type="text" placeholder="Book Author" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-half is-offset-one-quarter">
+                <div class="field">
+                  <div class="control">
+                    <button class="add button is-link is-rounded is-fullwidth">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./main.js"></script>
   </body>
