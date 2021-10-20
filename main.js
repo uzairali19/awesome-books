@@ -55,6 +55,8 @@ class BookList {
       this.addBook(undefined, undefined);
       this.bookList.push(this.book());
       localStorage.setItem('books', JSON.stringify(this.bookList));
+      this.bookName.value = '';
+      this.bookAuthor.value = '';
     });
   }
 
