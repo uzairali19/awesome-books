@@ -1,4 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.book-data > button {
+  margin-left: 60px;
+}
+
+.book-data {
+  font-size: 30px;
+}
+
+.main-title {
+  font-size: 80px;
 }

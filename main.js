@@ -22,8 +22,13 @@ class BookList {
   }
 
   addBook(bookName, bookAuthor, bookId) {
-    const nameInput = document.createElement('li');
+    const list = document.createElement('li');
+    const nameInput = document.createElement('a');
+    nameInput.classList.add('book-data');
+    list.appendChild(nameInput);
     const removeButton = document.createElement('button');
+    removeButton.classList.add('button');
+    removeButton.classList.add('is-danger');
     removeButton.innerText = 'Remove';
     if (bookName !== undefined && bookAuthor !== undefined) {
       removeButton.setAttribute('id', bookId);
