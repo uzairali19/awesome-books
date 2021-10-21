@@ -71,3 +71,11 @@
 .h-p {
   padding: 5px;
 }
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
