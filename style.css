@@ -5,6 +5,11 @@
   color: #fff;
 }
 
+.verticle-align {
+  margin-top: 100px;
+  padding-top: 100px;
+}
+
 .book-data > button {
   margin-left: 60px;
 }
@@ -44,9 +49,14 @@
   background-image: url(./background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-y: hidden;
+  height: 100vh;
 }
 
 .main-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 100px;
   background: rgb(48, 48, 48);
   padding: 10px;

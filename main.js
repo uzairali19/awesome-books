@@ -85,8 +85,38 @@ const booksLists = new BookList(bookName, bookAuthor, null, books, submit, bookL
 booksLists.submitBook();
 booksLists.localStorage();
 
-// body background image
+// Navigation
 
-const body = document.querySelector('.background-image');
-const height = window.innerHeight / 4.5;
-body.style.height = ((height) + 'vh');
+const allBooks = document.querySelector('#allbooks');
+const addBook = document.querySelector('#addbook');
+const contact = document.querySelector('#contact');
+
+const indexPage = document.querySelector('#index');
+const allBooksLink = document.querySelector('#all-books');
+const addBookLink = document.querySelector('#add-book');
+const contactUsLink = document.querySelector('#contact-us');
+
+function mainNav(page) {
+  page.addEventListener('click', () => {
+    allBooks.classList.add('show');
+    allBooks.classList.remove('hidden');
+    addBook.classList.add('hidden');
+    contact.classList.add('hidden');
+  });
+}
+
+mainNav(indexPage);
+mainNav(allBooksLink);
+
+addBookLink.addEventListener('click', () => {
+  addBook.classList.add('show');
+  addBook.classList.remove('hidden');
+  allBooks.classList.add('hidden');
+  contact.classList.add('hidden');
+});
+contactUsLink.addEventListener('click', () => {
+  contact.classList.add('show');
+  contact.classList.remove('hidden');
+  allBooks.classList.add('hidden');
+  addBook.classList.add('hidden');
+});

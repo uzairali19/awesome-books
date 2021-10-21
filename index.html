@@ -9,46 +9,39 @@
     <title>Awsome Books</title>
   </head>
   <body class="background-image" id="body">
-    <header>
-      <nav class="navbar is-dark h-p" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item is-size-4" href="#">
-            Awesome Book Store
-          </a>
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-size-6" id="all-books">
-              All Books
+    <header class="is-dark">
+      <nav class="navbar is-dark h-p">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-size-4" href="#" id="index"> Awesome Book Store </a>
+            <a role="button" class="navbar-burger" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
-            <a class="navbar-item is-size-6" id="add-book">
-              Add new book
-            </a>
-            <a class="navbar-item is-size-6" id="contact-us">
-              Contact Us
-            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="#all-books" class="navbar-item is-size-6" id="all-books"> All Books </a>
+              <a href="#add-book" class="navbar-item is-size-6" id="add-book"> Add new book </a>
+              <a href="#contact-us" class="navbar-item is-size-6" id="contact-us"> Contact Us </a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="hero is-medium">
+    <main class="verticle-align">
+      <section class="hero is-medium" id="allbooks">
         <div class="hero-body">
           <div class="container has-text-centered">
             <h1 id="main" class="main-title">All Awesome Books</h1>
-            <!-- <ul class="book-list sub-title"></ul> -->
             <aside class="menu">
               <ul class="menu-list book-list"></ul>
             </aside>
           </div>
         </div>
       </section>
-      <section class="hero is-small">
+      <section class="hero is-small hidden" id="addbook">
         <div class="hero-body">
           <div class="container has-text-centered">
             <h1 class="sub-title">Add Book</h1>
@@ -82,40 +75,25 @@
           </div>
         </div>
       </section>
-      <section class="hero is-medium">
+      <section class="hero is-medium hidden" id="contact">
         <div class="hero-body">
           <div class="container has-text-centered has-text-white">
-            <h3 class="main-title">
-              Contact Information
-          </h3>
-            <p class="sub-title">
-              Do you have any questions or just want say 'hello'
-            </p>
-            <p class="sub-title">
-              You can reach out to us!
-            </p>
+            <h3 class="main-title">Contact Information</h3>
+            <p class="sub-title">Do you have any questions or just want say 'hello'</p>
+            <p class="sub-title">You can reach out to us!</p>
             <ul>
-              <li class="list">
-                  Our e-mail: machipisajunior@gmail.com
-              </li>
-              <li class="list">
-                Our phone number: +27659187764
-              </li>
-              <li class="list">
-                Our address: 12 Pretoria Road, Johannesburg, South Africa
-              </li>
+              <li class="list">Our e-mail: machipisajunior@gmail.com</li>
+              <li class="list">Our phone number: +27659187764</li>
+              <li class="list">Our address: 12 Pretoria Road, Johannesburg, South Africa</li>
             </ul>
           </div>
         </div>
       </section>
     </main>
-
     <footer class="main-footer section">
       <div class="content">
         <div class="container py-5 has-text-white">
-        <p>
-         Copyright ...
-        </p>
+          <p>Copyright ...</p>
         </div>
       </div>
     </footer>
