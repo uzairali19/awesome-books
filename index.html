@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="style.css" />
     <title>Awsome Books</title>
   </head>
-  <body class="background-image">
+  <body class="background-image" id="body">
+    <header>
+      <nav class="navbar is-dark h-p" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item is-size-4" href="#">
+            Awesome Book Store
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-size-6" id="all-books">
+              All Books
+            </a>
+            <a class="navbar-item is-size-6" id="add-book">
+              Add new book
+            </a>
+            <a class="navbar-item is-size-6" id="contact-us">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="hero is-medium">
         <div class="hero-body">
@@ -55,7 +82,43 @@
           </div>
         </div>
       </section>
+      <section class="hero is-medium">
+        <div class="hero-body">
+          <div class="container has-text-centered has-text-white">
+            <h3 class="main-title">
+              Contact Information
+          </h3>
+            <p class="sub-title">
+              Do you have any questions or just want say 'hello'
+            </p>
+            <p class="sub-title">
+              You can reach out to us!
+            </p>
+            <ul>
+              <li class="list">
+                  Our e-mail: machipisajunior@gmail.com
+              </li>
+              <li class="list">
+                Our phone number: +27659187764
+              </li>
+              <li class="list">
+                Our address: 12 Pretoria Road, Johannesburg, South Africa
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="main-footer section">
+      <div class="content">
+        <div class="container py-5 has-text-white">
+        <p>
+         Copyright ...
+        </p>
+        </div>
+      </div>
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>

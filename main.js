@@ -84,3 +84,9 @@ const booksLists = new BookList(bookName, bookAuthor, null, books, submit, bookL
 
 booksLists.submitBook();
 booksLists.localStorage();
+
+// body background image
+
+const body = document.querySelector('.background-image');
+const height = window.innerHeight / 4.5;
+body.style.height = ((height) + 'vh');

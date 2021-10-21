@@ -19,11 +19,11 @@
 }
 
 .main-title {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .sub-title {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .background-image::before {
@@ -43,6 +43,21 @@
   position: relative;
   background-image: url(./background.jpeg);
   background-size: cover;
-  height: 100vh;
   background-repeat: no-repeat;
+}
+
+.main-footer {
+  height: 100px;
+  background: rgb(48, 48, 48);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.h-p {
+  padding: 5px;
 }
