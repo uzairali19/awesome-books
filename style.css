@@ -6,8 +6,7 @@
 }
 
 .verticle-align {
-  margin-top: 100px;
-  padding-top: 100px;
+  margin-top: 80px;
 }
 
 .book-data > button {
@@ -49,7 +48,7 @@
   background-image: url(./background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-y: hidden;
+  overflow-x: hidden;
   height: 100vh;
 }
 
@@ -57,7 +56,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 60px;
   background: rgb(48, 48, 48);
   padding: 10px;
   border-radius: 15px;
@@ -78,4 +77,13 @@
 
 .hidden {
   display: none;
+}
+
+.background {
+  background: transparent;
+}
+
+#time {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
 }

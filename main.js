@@ -120,3 +120,27 @@ contactUsLink.addEventListener('click', () => {
   allBooks.classList.add('hidden');
   addBook.classList.add('hidden');
 });
+
+// Date & Time
+const d = new Date();
+const day = d.getDate();
+const year = d.getFullYear();
+const months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'June',
+  'July',
+  'Aug',
+  'Sept',
+  'Oct',
+  'Nov',
+  'Dec',
+];
+const month = months[d.getMonth()];
+const date = `${month} ${day} ${year}`;
+const time = new Date().toLocaleTimeString();
+const timeBox = document.querySelector('#time');
+timeBox.innerHTML = `${date}, ${time}`;
