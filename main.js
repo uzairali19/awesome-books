@@ -84,3 +84,63 @@ const booksLists = new BookList(bookName, bookAuthor, null, books, submit, bookL
 
 booksLists.submitBook();
 booksLists.localStorage();
+
+// Navigation
+
+const allBooks = document.querySelector('#allbooks');
+const addBook = document.querySelector('#addbook');
+const contact = document.querySelector('#contact');
+
+const indexPage = document.querySelector('#index');
+const allBooksLink = document.querySelector('#all-books');
+const addBookLink = document.querySelector('#add-book');
+const contactUsLink = document.querySelector('#contact-us');
+
+function mainNav(page) {
+  page.addEventListener('click', () => {
+    allBooks.classList.add('show');
+    allBooks.classList.remove('hidden');
+    addBook.classList.add('hidden');
+    contact.classList.add('hidden');
+  });
+}
+
+mainNav(indexPage);
+mainNav(allBooksLink);
+
+addBookLink.addEventListener('click', () => {
+  addBook.classList.add('show');
+  addBook.classList.remove('hidden');
+  allBooks.classList.add('hidden');
+  contact.classList.add('hidden');
+});
+contactUsLink.addEventListener('click', () => {
+  contact.classList.add('show');
+  contact.classList.remove('hidden');
+  allBooks.classList.add('hidden');
+  addBook.classList.add('hidden');
+});
+
+// Date & Time
+const d = new Date();
+const day = d.getDate();
+const year = d.getFullYear();
+const months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'June',
+  'July',
+  'Aug',
+  'Sept',
+  'Oct',
+  'Nov',
+  'Dec',
+];
+const month = months[d.getMonth()];
+const date = `${month} ${day} ${year}`;
+const time = new Date().toLocaleTimeString();
+const timeBox = document.querySelector('#time');
+timeBox.innerHTML = `${date}, ${time}`;
